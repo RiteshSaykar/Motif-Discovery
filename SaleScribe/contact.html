@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SaleScribe</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Lumanosimo&family=Mulish&family=Rubik:wght@300&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <div id="logo" class="left">
+        <p>SaleScribe</p>
+      </div>
+      <div class="center">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+            <a href="seller.html">Sellers</a>
+            <a href="customer.html">Customers</a>
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <a href="sign-in-up.html">
+          <button type="button" class="btn1"><span>Sign In</span></button>
+          <button type="button" class="btn2">Sign Up</button>
+        </a>
+      </div>
+    </nav>
+
+    <section id="container">
+      <div class="cleft" id="details">
+        <div id="address" style="display: flex">
+          <div>
+            <img src="/icons8-address-50.png" alt="" />
+          </div>
+          <div class="text">
+            <span id="top">Address</span>
+            <p>PK House, 6th floor, 254 RedField</p>
+            <p>Bangalore, Karnataka-560453</p>
+          </div>
+        </div>
+        <div id="pno" style="display: flex">
+          <div>
+            <img src="/icons8-phone-50.png" alt="" />
+          </div>
+          <div class="text2">
+            <span id="no">Lets Talk</span>
+            <p>084 596 32147</p>
+            <p>045 862 24796</p>
+          </div>
+        </div>
+        <div id="mail" style="display: flex">
+          <div>
+            <img
+              src="/icons8-email-50.png
+            "
+              alt=""
+            />
+          </div>
+          <div class="text3">
+            <span id="gen">General Support</span>
+            <p>support@salescribe.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cright" id="form">
+        <h1 id="head">Get In Touch</h1>
+        <form action="">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phno" name="phno" required />
+
+          <!-- <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required /> -->
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Contact Us</button>
+        </form>
+      </div>
+      <footer>
+        <p>&copy; 2023 SaleScribe. All rights reserved.</p>
+      </footer>
+    </section>
+  </body>
+</html>
