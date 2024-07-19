@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SaleScribe| Customers</title>
+    <link rel="stylesheet" href="customer.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Lumanosimo&family=Mulish&family=Rubik:wght@300&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="customer.js"></script>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="logo" class="left">
+        <p>SaleScribe</p>
+      </div>
+      <div class="center">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+            <a href="seller.html">Sellers</a>
+            <a href="customer.html">Customers</a>
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <a href="sign-in-up.html">
+          <button type="button" class="btn1"><span>Sign In</span></button>
+          <button type="button" class="btn2">Sign Up</button>
+        </a>
+      </div>
+    </nav>
+
+    <section id="customer">
+      <div class="list">
+        <h1>Customers List</h1>
+        <div class="search-bar">
+          <input type="text" placeholder="Search customers..." />
+          <button type="button">
+            <img src="/icons8-search-64.png" alt="SearchIcon" title="Search" />
+          </button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Contact Info</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="tablewrapper"></div>
+
+      <div id="customer-details">
+        <div class="modify">
+          <div class="add" style="margin-right: 15px">
+            <button id="btn1" onclick="toggleHide()">
+              <h2 style="margin: auto auto">Add a new customer</h2>
+            </button>
+          </div>
+          <div class="edit" style="margin-left: 15px">
+            <button>
+              <h2 style="margin: auto auto">Edit details</h2>
+            </button>
+          </div>
+        </div>
+        <div class="details" id="details" style="display: none;">
+          <div class="head">
+            <h3 style="color: #20766f; font-size: 1.3rem">Customer Details</h3>
+          </div>
+          <div class="customer-details">
+            <input type="hidden" id="customer-id" />
+            <label for="customer-name">Name:</label>
+            <input type="text" id="customer-name" required>
+            <label for="customer-contact">Contact Info:</label>
+            <input type="text" id="customer-contact" required>
+            <label for="customer-location1">Billing Address:</label>
+            <input type="text" id="customer-location1" required>
+            <label for="customer-location2">Shipping Address:</label>
+            <input type="text" id="customer-location2" required>
+            <label for="customer-bill">Total Amount Spent:</label>
+            <input type="text" id="customer-bill" required>
+            <label for="customer-pay">Preferred Payments:</label>
+            <input type="text" id="customer-pay" />
+            <label for="customer-shop">Preferred Categories:</label>
+            <input type="text" id="customer-shop" />
+            <label for="customer-loyalty">Loyalty Points / Rewards:</label>
+            <input type="text" id="customer-loyalty" />
+            <label for="customer-feedback">Feedback(s):</label>
+            <input type="text" id="customer-feedback" />
+            <label for="customer-subs">Subscription(s):</label>
+            <input type="text" id="customer-subs" />
+          </div>
+          <div class="btn">
+            <button id="save-customer" onclick="saveCustomer()">Save</button>
+            <button id="cancel-edit" onclick="cancelEdit()">Cancel</button>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>&copy; 2023 SaleScribe. All rights reserved.</p>
+      </footer>
+    </section>
+  </body>
+</html>
